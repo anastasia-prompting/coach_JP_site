@@ -416,31 +416,30 @@ li {
 .about-photo img,
 .cta-photo img {
   width: 100%;
-  aspect-ratio: 2 / 3;
-  object-fit: cover;
-}
-
-.hero-media img {
-  object-position: center 14%;
-}
-
-.about-photo img {
-  object-position: center 12%;
-}
-
-.cta-photo img {
-  object-position: center 12%;
+  height: auto;
+  aspect-ratio: auto;
+  object-fit: contain;
+  object-position: center;
+  background: linear-gradient(180deg, rgba(248, 251, 247, 0.78), rgba(234, 242, 233, 0.62));
 }
 
 .hero-media {
   max-width: 620px;
   justify-self: end;
+  aspect-ratio: 4 / 5;
 }
 
 .about-photo,
 .cta-photo {
   max-width: 560px;
   justify-self: end;
+  aspect-ratio: 4 / 5;
+}
+
+.hero-media img,
+.about-photo img,
+.cta-photo img {
+  height: 100%;
 }
 
 .section-head {
@@ -994,6 +993,7 @@ details p {
   .cta-photo {
     max-width: 100%;
     justify-self: stretch;
+    aspect-ratio: 3 / 4;
   }
 }
 
@@ -1036,8 +1036,7 @@ details p {
   .hero-media img,
   .about-photo img,
   .cta-photo img {
-    aspect-ratio: 3 / 4;
-    object-position: center 10%;
+    object-position: center;
   }
 
   .steps {
